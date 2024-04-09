@@ -37,9 +37,10 @@ services:
   maildev:
     image: maildev/maildev
     ports:
-      - "8084:80"      # Port pour l'interface web de MailDev
-      - "1025:25"      # Port SMTP
-    restart: always
+      - "8084:1080" # Mappe le port 8084 de l'hôte au port 1080 du conteneur
+      - "1025:1025" # Mappe le port 1025 de l'hôte au port 1025 du conteneur pour le serveur SMTP
+    environment:
+      MAILDEV_WEB: "1080"
 
 
 
