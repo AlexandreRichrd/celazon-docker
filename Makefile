@@ -15,3 +15,17 @@ rebuild: down build
 
 pull-front:
 	echo "Pulling front image..."
+
+init-yarn:
+	echo "Initializing ...."
+	cd ./cafe-crampte-api
+	yarn
+	cd ../cafe-crampte-front
+	yarn
+
+init-npm:
+	echo "Initializing ...."
+	cd ./cafe-crampte-api
+	npm install
+	cd ../cafe-crampte-front
+	npm install
