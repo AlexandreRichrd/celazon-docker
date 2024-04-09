@@ -18,3 +18,6 @@ INSERT INTO users (id, username, password, email, role) VALUES
 (5, 'commu', 'hU89&Jk1', 'com@service.com', 2),
 (6, 'cheffy', '98Gh^Tf0', 'chef@kitchen.com', 3),
 (7, 'root', 'SuPer#4dM', 'admin@root.com', 9);
+
+
+exit;
